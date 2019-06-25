@@ -1,0 +1,9 @@
+@import url("https://use.typekit.net/btz4alq.css");
+body{
+    background-color: red;
+    font-family: "fira-sans-compressed",sans-serif;
+    color: white;
+}
+input{
+    color: green;
+}
