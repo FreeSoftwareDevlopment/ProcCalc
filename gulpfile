@@ -8,7 +8,10 @@ function html() {
     .pipe(rename('index.html'))
     .pipe(dest('build'))
 }
-
+function svg(){
+  return src('*.svg')
+    .pipe(dest('build'))
+}
 function css() {
   return src('*.css')
     .pipe(minifyCSS())
@@ -25,9 +28,9 @@ function cop() {
   return src('sw.js')
     .pipe(dest('build'))
 }
-
+exports.svg = svg;
 exports.cop = cop;
 exports.js = js;
 exports.css = css;
 exports.html = html;
-exports.default = parallel(html, css, js);
+exports.default = parallel(html, css, js, svg);
