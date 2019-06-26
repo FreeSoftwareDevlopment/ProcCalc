@@ -29,7 +29,7 @@ function workedfl(onres){
        var colls = partsui(gesi ,teil);
        if(colls != Infinity){
        document.getElementById("targest").innerText="Ergebnis:\n" + colls + "%";
-       console.log("Calculated: \n\t" + colls + "%");}
+       console.log("Calculated: \n\t" + colls);}
        else{
            console.warn("Forbidden Calc");
        }
