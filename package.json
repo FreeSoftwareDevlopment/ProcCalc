@@ -5,7 +5,7 @@
   "main": "calc.js",
   "scripts": {
     "reset": "rm calc.js&&rm sw.js",
-    "test": "tsc calc.ts&&rm sw.js&&gulp -f gulpfile&&workbox generateSW wbc&&gulp -f gulpfile cop",
+    "test": "tsc calc.ts&&rm sw.js&&gulp -f gulpfile&&workbox generateSW wbc&&gulp -f gulpfile cop&&rm sw.js",
     "start": "tsc calc.ts&&workbox generateSW wbc"
   },
   "repository": {
