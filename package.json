@@ -1,0 +1,30 @@
+{
+  "name": "proccalc",
+  "version": "1.0.0",
+  "description": "Typescipt Compiler",
+  "main": "calc.ts",
+  "scripts": {
+    "reset":"rm calc.js&&rm sw.js",
+    "test": "npm start",
+    "start": "tsc calc.ts&&workbox generateSW wbc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreeSoftwareDevlopment/ProcCalc.git"
+  },
+  "keywords": [
+    "tsc",
+    "calc",
+    "%calc"
+  ],
+  "author": "Sharkbyteprojects",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreeSoftwareDevlopment/ProcCalc/issues"
+  },
+  "homepage": "https://freesoftwaredevlopment.github.io/ProcCalc/",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^3.5.2"
+  }
+}
