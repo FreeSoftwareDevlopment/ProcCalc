@@ -30,6 +30,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-rename": "^1.4.0",
-    "typescript": "^3.5.2"
+    "typescript": "^3.5.2",
+    "workbox": "0.0.0"
   }
 }
