@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ProcCalc</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="shortcut icon" href="icon.svg">
+    <link rel="apple-touch-icon" href="icon.svg"/>
+</head>
+<body>
+    <h1>ProcCalc</h1>
+    <h2>Prozentwertberechnung:</h2>
+    <p>
+        <div id="gesa">Gesamtwert: <input type="number" id="ges"/></div><br>
+        <div id="teils">Teilwert: <input type="number" id="tei"/></div>
+    </p><p><button onclick="worke(false)">Calc</button> <button onclick="worke(true)">Reset</button></p>
+    <p id="savesd"></p>
+    <hr>
+    <h2>Teilwertberechnung:</h2>
+    <p>
+    <div id="gesa">Gesamtwert: <input type="number" id="gesasa"/></div><br>
+    <div id="proz">Prozentwert: <input type="number" id="procse"/>%</div></p>
+    <p><button onclick="workedfl(false)">Calc</button> <button onclick="workedfl(true)">Reset</button></p>
+    <p id="targest"></p>
+    <script>	
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('sw.js');
+        }
+     </script>
+</body>
+</html>

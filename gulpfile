@@ -1,0 +1,33 @@
+const { src, dest, parallel } = require('gulp');
+const minifyCSS = require('gulp-csso');
+const concat = require('gulp-concat');
+const rename = require("gulp-rename");
+
+function html() {
+  return src('gulpsrc.html')
+    .pipe(rename('index.html'))
+    .pipe(dest('build'))
+}
+
+function css() {
+  return src('*.css')
+    .pipe(minifyCSS())
+    .pipe(dest('build'))
+}
+
+function js() {
+  return src('*.js')
+    .pipe(concat('main.js'))
+    .pipe(dest('build'))
+}
+
+function cop() {
+  return src('sw.js')
+    .pipe(dest('build'))
+}
+
+exports.cop = cop;
+exports.js = js;
+exports.css = css;
+exports.html = html;
+exports.default = parallel(html, css, js);
